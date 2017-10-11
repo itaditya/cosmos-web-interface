@@ -1,0 +1,41 @@
+{
+  "name": "AM-admin-panel",
+  "version": "1.0.0",
+  "description": "1. Run `bower install` 2. Run `npm i -g angular-http-server` 3. Run `angular-http-server` 3. Go to localhost:8080",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.8.0",
+    "eslint-config-airbnb": "^16.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-eslint": "^4.0.0",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "sort-stream": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "angular-http-server",
+    "deploy": "gulp build && surge"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itaditya/AM-admin-panel.git"
+  },
+  "keywords": [],
+  "author": "Aditya Agarwal <adityaa803@gmail.com> (http://adi.surge.sh/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itaditya/AM-admin-panel/issues"
+  },
+  "homepage": "https://github.com/itaditya/AM-admin-panel#readme"
+}

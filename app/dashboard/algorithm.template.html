@@ -1,0 +1,6 @@
+<div>
+  <div ng-repeat="sourceCode in vm.sourceCodes">
+    <h5>{{sourceCode.fileName}}</h5>
+    <code-mirror lang="{{sourceCode.extension}}" model="sourceCode.code" line-numbers="true"></code-mirror>
+  </div>
+</div>

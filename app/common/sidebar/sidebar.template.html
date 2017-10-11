@@ -1,0 +1,32 @@
+<style scoped>
+  #sidebar #programLinks>li>a{
+    padding-left: 25px;
+  }
+  #sidebar #programLinks li a i{
+    margin: 0;
+  }
+</style>
+<ul id="sidebar" class="side-nav fixed">
+  <li>
+    <h3 class="center">
+      Algorithms
+    </h3>
+  </li>
+  <li class="no-padding">
+    <ul class="collapsible collapsible-accordion" id="programLinks">
+      <li ng-repeat="(key, code) in vm.codes">
+        <a class="collapsible-header">
+          {{key}}
+          <i class="material-icons right">arrow_drop_down</i>
+        </a>
+        <div class="collapsible-body">
+          <ul>
+            <li ng-repeat="(name, val) in code">
+              <a ui-sref="dashboard.algorithm({root: key, child: name})">{{name}}</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </li>
+</ul>
